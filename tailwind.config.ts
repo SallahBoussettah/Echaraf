@@ -11,13 +11,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Echaraf Brand Colors
+        // Echaraf Brand Colors - EXACT from your palette
         'echaraf': {
           'blue': '#4285F4',      // Cornflower Blue - Primary
-          'green': '#34A853',     // Chateau Green - Success
+          'green': '#34A853',     // Chateau Green - Success  
           'red': '#EA4335',       // Cinnabar Red - Accent
           'yellow': '#FBBC05',    // Selective Yellow - Highlight
         },
+        // Override primary colors to use Echaraf brand
+        'primary': '#4285F4',
+        'success': '#34A853', 
+        'danger': '#EA4335',
+        'warning': '#FBBC05',
         // Custom neutrals for better section definition
         'neutral': {
           '50': '#fafafa',

@@ -56,8 +56,8 @@ export function Navbar() {
         <div className="lg:flex">
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="/" className="flex items-center">
-              <div className="text-2xl font-bold">
-                <span className="text-blue-600">Echaraf</span>
+              <div className="text-2xl font-bold font-heading">
+                <span className="text-brand-primary">Echaraf</span>
               </div>
             </a>
             <button
@@ -127,10 +127,10 @@ export function Navbar() {
               About Us
             </a>
             <a
-              href="#"
+              href="/courses"
               className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
             >
-              Courses Offered
+              Courses
             </a>
             <div
               onMouseEnter={useActive.openOnDesktopDropdownMenu}
@@ -183,7 +183,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiAcademicCap className="size-4 text-blue-600" />
+                            <HiAcademicCap className="size-4" style={{color: '#4285F4'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Admissions Info</h5>
@@ -197,7 +197,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiBookOpen className="size-4 text-green-600" />
+                            <HiBookOpen className="size-4" style={{color: '#34A853'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">
@@ -213,7 +213,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiUserGroup className="size-4 text-purple-600" />
+                            <HiUserGroup className="size-4" style={{color: '#EA4335'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Faculty Team</h5>
@@ -227,7 +227,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiPhone className="size-4 text-red-600" />
+                            <HiPhone className="size-4" style={{color: '#FBBC05'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Contact Us</h5>
@@ -246,7 +246,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiArrowTrendingUp className="size-4 text-blue-600" />
+                            <HiArrowTrendingUp className="size-4" style={{color: '#4285F4'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Education Trends</h5>
@@ -260,7 +260,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiTrophy className="size-4 text-yellow-600" />
+                            <HiTrophy className="size-4" style={{color: '#FBBC05'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Student Success</h5>
@@ -274,7 +274,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiSparkles className="size-4 text-pink-600" />
+                            <HiSparkles className="size-4" style={{color: '#34A853'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Community Events</h5>
@@ -288,7 +288,7 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiPencilSquare className="size-4 text-indigo-600" />
+                            <HiPencilSquare className="size-4" style={{color: '#EA4335'}} />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Blog Highlights</h5>

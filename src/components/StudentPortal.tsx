@@ -9,15 +9,15 @@ export function StudentPortal() {
       <div className="container">
         <div className="flex flex-col items-start">
           <div className="rb-12 mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
-            <h3 className="text-4xl leading-[1.2] font-bold md:text-5xl lg:text-6xl">
+            <h3 className="text-4xl leading-[1.2] font-bold font-heading md:text-5xl lg:text-6xl">
               Seamless Sign-Up and Sign-In for Students and Parents
             </h3>
           </div>
           <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
             <div>
               <div className="rb-5 mb-5 md:mb-6">
-                <div className="flex size-12 items-center justify-center bg-blue-100 rounded-lg">
-                  <HiUser className="size-6 text-blue-600" />
+                <div className="flex size-12 items-center justify-center rounded-lg" style={{backgroundColor: '#4285F4' + '1A'}}>
+                  <HiUser className="size-6" style={{color: '#4285F4'}} />
                 </div>
               </div>
               <h3 className="mb-5 text-xl font-bold md:mb-6 md:text-2xl">
@@ -39,8 +39,8 @@ export function StudentPortal() {
             </div>
             <div>
               <div className="rb-5 mb-5 md:mb-6">
-                <div className="flex size-12 items-center justify-center bg-green-100 rounded-lg">
-                  <HiBookOpen className="size-6 text-green-600" />
+                <div className="flex size-12 items-center justify-center rounded-lg" style={{backgroundColor: '#34A853' + '1A'}}>
+                  <HiBookOpen className="size-6" style={{color: '#34A853'}} />
                 </div>
               </div>
               <h3 className="mb-5 text-xl font-bold md:mb-6 md:text-2xl">
@@ -62,8 +62,8 @@ export function StudentPortal() {
             </div>
             <div>
               <div className="rb-5 mb-5 md:mb-6">
-                <div className="flex size-12 items-center justify-center bg-purple-100 rounded-lg">
-                  <HiChatBubbleLeftRight className="size-6 text-purple-600" />
+                <div className="flex size-12 items-center justify-center rounded-lg" style={{backgroundColor: '#FBBC05' + '1A'}}>
+                  <HiChatBubbleLeftRight className="size-6" style={{color: '#FBBC05'}} />
                 </div>
               </div>
               <h3 className="mb-5 text-xl font-bold md:mb-6 md:text-2xl">

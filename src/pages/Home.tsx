@@ -14,15 +14,33 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
-      <Features />
-      <Subjects />
-      <StudentPortal />
-      <JoinCommunitySection />
-      {/* <Testimonials /> */}
-      <EarlyAccessSection />
-      <NewsletterSection />
-      <Footer />
+      <div className="bg-white border-b border-gray-100">
+        <Hero />
+      </div>
+      <div className="bg-gray-50 border-b border-gray-200">
+        <Features />
+      </div>
+      <div className="section-light-blue border-b border-blue-100">
+        <Subjects />
+      </div>
+      <div className="bg-white border-b border-gray-100">
+        <StudentPortal />
+      </div>
+      <div className="section-light-green border-b border-green-100">
+        <JoinCommunitySection />
+      </div>
+      <div className="bg-gray-50 border-b border-gray-200">
+        <Testimonials />
+      </div>
+      <div className="section-light-red border-b border-red-100">
+        <EarlyAccessSection />
+      </div>
+      <div className="section-light-yellow border-b border-yellow-100">
+        <NewsletterSection />
+      </div>
+      <div className="bg-gray-100 border-t border-gray-300">
+        <Footer />
+      </div>
     </div>
   );
 }
