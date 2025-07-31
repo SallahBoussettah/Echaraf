@@ -50,14 +50,14 @@ export function Navbar() {
   return (
     <section
       id="relume"
-      className="relative z-[999] flex w-full items-center justify-between border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%]"
+      className="fixed top-0 left-0 right-0 z-[999] flex w-full items-center justify-between border-b border-border-primary bg-white/95 backdrop-blur-sm shadow-sm lg:min-h-18 lg:px-[5%]"
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="lg:flex">
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="/" className="flex items-center">
               <div className="text-2xl font-bold font-heading">
-                <span className="text-brand-primary">Echaraf</span>
+                <span className="text-black-600">Echaraf</span>
               </div>
             </a>
             <button

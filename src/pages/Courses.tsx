@@ -10,7 +10,7 @@ export default function Courses() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="bg-white border-b border-gray-100">
+      <div className="pt-16 md:pt-18 bg-white border-b border-gray-100">
         <CoursesHero />
       </div>
       <div className="section-light-blue border-b border-blue-100">

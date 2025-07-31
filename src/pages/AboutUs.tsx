@@ -1,4 +1,3 @@
-import React from "react";
 import { Navbar } from "../components/Navbar";
 import { AboutHero } from "../components/AboutHero";
 import { AboutMission } from "../components/AboutMission";
@@ -14,7 +13,9 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <AboutHero />
+      <div className="pt-16 md:pt-18">
+        <AboutHero />
+      </div>
       <AboutMission />
       <AboutPrograms />
       <AboutTimeline />

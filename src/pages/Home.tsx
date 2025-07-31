@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="bg-white border-b border-gray-100">
+      <div className="pt-16 md:pt-18 bg-white border-b border-gray-100">
         <Hero />
       </div>
       <div className="bg-gray-50 border-b border-gray-200">
