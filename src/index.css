@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables for Echaraf Brand */
+:root {
+  --echaraf-blue: #4285F4;
+  --echaraf-green: #34A853;
+  --echaraf-red: #EA4335;
+  --echaraf-yellow: #FBBC05;
+}
+
+/* Base Typography */
+@layer base {
+  html {
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+  }
+  
+  body {
+    @apply font-body text-neutral-800 bg-white;
+    line-height: 1.6;
+  }
+}
+
+/* Section Utilities */
+@layer utilities {
+  .section-primary {
+    @apply bg-white;
+  }
+  
+  .section-secondary {
+    @apply bg-neutral-50;
+  }
+  
+  .section-accent {
+    @apply bg-gradient-to-br from-echaraf-blue/5 to-echaraf-green/5;
+  }
+  
+  .section-dark {
+    @apply bg-neutral-900 text-white;
+  }
+  
+  .text-brand-primary {
+    @apply text-echaraf-blue;
+  }
+  
+  .text-brand-success {
+    @apply text-echaraf-green;
+  }
+  
+  .text-brand-accent {
+    @apply text-echaraf-red;
+  }
+  
+  .text-brand-highlight {
+    @apply text-echaraf-yellow;
+  }
+  
+  .bg-brand-primary {
+    @apply bg-echaraf-blue;
+  }
+  
+  .bg-brand-success {
+    @apply bg-echaraf-green;
+  }
+  
+  .bg-brand-accent {
+    @apply bg-echaraf-red;
+  }
+  
+  .bg-brand-highlight {
+    @apply bg-echaraf-yellow;
+  }
+}
