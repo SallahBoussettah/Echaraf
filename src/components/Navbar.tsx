@@ -195,7 +195,7 @@ export function Navbar() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/private-courses"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
