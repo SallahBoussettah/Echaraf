@@ -1,16 +1,15 @@
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
 import {
-  HiAcademicCap,
-  HiBookOpen,
-  HiUserGroup,
   HiPhone,
   HiArrowTrendingUp,
   HiTrophy,
   HiSparkles,
   HiPencilSquare,
+  HiUsers,
+  HiLockClosed,
 } from "react-icons/hi2";
 
 const useRelume = () => {
@@ -179,16 +178,19 @@ export function Navbar() {
                           Explore Our Pages
                         </h4>
                         <a
-                          href="#"
+                          href="/public-courses"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiAcademicCap className="size-4" style={{color: '#4285F4'}} />
+                            <HiUsers
+                              className="size-4"
+                              style={{ color: "#4285F4" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">Admissions Info</h5>
+                            <h5 className="font-semibold">Public Courses</h5>
                             <p className="hidden text-sm md:block">
-                              Learn about our admission process today!
+                              Explore our accessible public course offerings.
                             </p>
                           </div>
                         </a>
@@ -197,14 +199,15 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiBookOpen className="size-4" style={{color: '#34A853'}} />
+                            <HiLockClosed
+                              className="size-4"
+                              style={{ color: "#34A853" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">
-                              Curriculum Overview
-                            </h5>
+                            <h5 className="font-semibold">Private Courses</h5>
                             <p className="hidden text-sm md:block">
-                              Discover our comprehensive curriculum offerings.
+                              Discover our personalized private tutoring.
                             </p>
                           </div>
                         </a>
@@ -213,24 +216,13 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiUserGroup className="size-4" style={{color: '#EA4335'}} />
+                            <HiPhone
+                              className="size-4"
+                              style={{ color: "#EA4335" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">Faculty Team</h5>
-                            <p className="hidden text-sm md:block">
-                              Meet our dedicated faculty members.
-                            </p>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
-                        >
-                          <div className="flex size-6 flex-col items-center justify-center">
-                            <HiPhone className="size-4" style={{color: '#FBBC05'}} />
-                          </div>
-                          <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">Contact Us</h5>
+                            <h5 className="font-semibold">Contact</h5>
                             <p className="hidden text-sm md:block">
                               Get in touch for inquiries or support.
                             </p>
@@ -246,7 +238,10 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiArrowTrendingUp className="size-4" style={{color: '#4285F4'}} />
+                            <HiArrowTrendingUp
+                              className="size-4"
+                              style={{ color: "#4285F4" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Education Trends</h5>
@@ -260,7 +255,10 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiTrophy className="size-4" style={{color: '#FBBC05'}} />
+                            <HiTrophy
+                              className="size-4"
+                              style={{ color: "#FBBC05" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Student Success</h5>
@@ -274,7 +272,10 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiSparkles className="size-4" style={{color: '#34A853'}} />
+                            <HiSparkles
+                              className="size-4"
+                              style={{ color: "#34A853" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Community Events</h5>
@@ -288,7 +289,10 @@ export function Navbar() {
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
-                            <HiPencilSquare className="size-4" style={{color: '#EA4335'}} />
+                            <HiPencilSquare
+                              className="size-4"
+                              style={{ color: "#EA4335" }}
+                            />
                           </div>
                           <div className="flex flex-col items-start justify-center">
                             <h5 className="font-semibold">Blog Highlights</h5>
@@ -386,24 +390,24 @@ export function Navbar() {
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
                 className="w-full"
-                title="Button"
+                title="Login"
                 variant="secondary"
                 size="sm"
               >
-                Button
+                <a href="/login">Login</a>
               </Button>
-              <Button className="w-full" title="Button" size="sm">
-                Button
+              <Button className="w-full" title="Register" size="sm">
+                <a href="/register">Register</a>
               </Button>
             </div>
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button title="Join" variant="secondary" size="sm">
-            Join
+          <Button title="Login" variant="secondary" size="sm">
+            <a href="/login">Login</a>
           </Button>
-          <Button title="Learn" size="sm">
-            Learn
+          <Button title="Register" size="sm">
+            <a href="/register">Register</a>
           </Button>
         </div>
       </div>

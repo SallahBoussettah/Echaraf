@@ -29,9 +29,9 @@ export default function Home() {
       <div className="section-light-green border-b border-green-100">
         <JoinCommunitySection />
       </div>
-      <div className="bg-gray-50 border-b border-gray-200">
+      {/* <div className="bg-gray-50 border-b border-gray-200">
         <Testimonials />
-      </div>
+      </div> */}
       <div className="section-light-red border-b border-red-100">
         <EarlyAccessSection />
       </div>

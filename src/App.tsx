@@ -1,8 +1,10 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Courses from "./pages/Courses";
+import PublicCourses from "./pages/PublicCourses";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/public-courses" element={<PublicCourses />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>
